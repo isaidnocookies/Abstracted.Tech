@@ -1,0 +1,1 @@
+aws s3 sync ~/Documents/Development/Abstracted.Tech s3://www.abstracted.tech
