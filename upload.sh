@@ -1,1 +1,1 @@
-aws s3 sync ~/Documents/Development/Abstracted.Tech s3://www.abstracted.tech
+aws s3 sync ~/Documents/Development/Abstracted.Tech s3://www.abstracted.tech --exclude "README.md" --exclude "upload.sh" --exclude "LICENSE" --exclude ".*"
