@@ -2,307 +2,178 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <title>Projects · abstracted.tech</title>
+    <meta name="description" content="Current and archived projects by Christopher Forte, with an overview of each one that has wound down.">
     <meta name="author" content="isaidnocookies">
-
-    <title>abstracted.tech</title>
-
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/stylish-portfolio.css" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/4c8d18ba1e.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-        rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="icon" href="/img/glyph.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
 </head>
 
 <body>
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick='$("#menu-close").click();'></a>
-            </li>
-            <li>
-                <a href="/" onclick='$("#menu-close").click();'>Home</a>
-            </li>
-            <li>
-                <a href="/projects/" onclick='$("#menu-close").click();'>Projects</a>
-            </li>
-            <li>
-                <a href="/community/" onclick='$("#menu-close").click();'>Community Involvement</a>
-            </li>
-            <li>
-                <a href="#contact" onclick='$("#menu-close").click();'>Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-
-    <div id="header" class="container">
-        <div class="row text-center" style="margin-top:10%; margin-bottom: 10%;">
-            <h1>[ Projects ]</h1>
+    <header class="bar">
+        <div class="bar__inner">
+            <a class="bar__home" href="/">
+                <svg class="glyph" viewBox="0 0 832 832" aria-hidden="true">
+                    <path class="stroke" d="M430 832 V40 L30 430 H832" />
+                    <circle class="stroke" cx="588" cy="590" r="102" />
+                </svg>
+                abstracted.tech
+            </a>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="/#c2society">C2Society</a></li>
+                    <li><a href="/projects/" aria-current="page">Projects</a></li>
+                    <li><a href="/community/">Talks &amp; community</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-
-    <!-- Projects -->
-    <div id="projects" class="container">
-        <div class="row">
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="/img/dc702_white_chip.png" style="height:100px; width: auto;" alt="Responsive image">
-                <br /><br />
-                <a href="https://dc702.space">DC702</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        DC702 is a local community within Las Vegas focused on security research, hacking, and the general IT field.
-                        We engage with other local organizations to help build awareness and support the community. Our group also includes
-                        the local TOOOL chapter focused on lock picking and physical security awareness.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="/img/as-logo.png"
-                    style="height:100px; width: auto;" alt="Responsive image">
-                <br /><br />
-                <a href="https://abstractedsolutions.com">Abstracted Solutions</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        Abstracted Solutions is dedicated to providing security and IT services to small to mid-sized businesses as well
-                        as providing awareness to residential clients. Abstracted Solutions also brings you projects like The Unknown Space and various other
-                        experiments based around security awareness. We are here to help you abstract away the complexity to facilitate more secure environments.
-                    </p>
-                </div>
-            </div>
+    <main>
+        <div class="page-title">
+            <h1>Projects</h1>
+            <p class="lead">
+                What I'm working on now, and an overview of the projects that have wound down, so the work behind
+                them stays findable after the sites go dark.
+            </p>
         </div>
 
-        <br><br>
+        <section class="section" aria-labelledby="active-title">
+            <h2 id="active-title">Active</h2>
+            <ul class="entries">
+                <li class="entry">
+                    <div>
+                        <h3><a href="/#c2society">C2Society</a></h3>
+                        <div class="entry__meta">Nonprofit, since 2020</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            A Las Vegas nonprofit dedicated to security awareness, formerly DC702. C2Society runs
+                            the weekly DC702 meetups, The Petting Zoo CTF, and the group's DEF CON contests, and
+                            includes the local TOOOL chapter for lockpicking and physical security awareness.
+                        </p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div>
+                        <h3><a href="https://www.the-petting-zoo.com/">The Petting Zoo</a></h3>
+                        <div class="entry__meta">CTF workshop, with C2Society</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            A workshop-style capture the flag event that introduces people to CTFs. It has been run
+                            for three-letter agencies, military groups, and local law enforcement, and at DEF CON 30
+                            and 31. Challenges cover web attacks, binary exploitation, forensics, cryptography, and
+                            lockpicking, and the format can be tailored to whatever a group needs to learn.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-        <div class="row">
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="/img/pettingzoo.png" style="height:100px; width: auto;"
-                    alt="Responsive image">
-                    <br /><br />
-                <a href="https://the-petting-zoo.com">The Petting Zoo</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        'The Petting Zoo' is a workshop-styled capture the flag (CTF) event where we introduce participants to the world of CTFs.
-                        This event has been hosted for various "three-letter agencies," military groups, and local law enforcement. Additionally, this was hosted at
-                        DEF CON 30 and 31. This is a project run by C2Society and is one of the many ways our non-profit helps the community grow.
-                    </p>
-                </div>
-            </div>
+        <section class="section" aria-labelledby="archive-title">
+            <h2 id="archive-title">Archived</h2>
+            <ul class="entries">
+                <li class="entry" id="abstracted-solutions">
+                    <div>
+                        <h3>Abstracted Solutions</h3>
+                        <div class="entry__meta">Security consultancy, around 2021 to 2024</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            A small security and IT practice for small and mid-sized businesses, plus awareness work
+                            for residential clients. The idea was in the name: complexity is at odds with security,
+                            so abstract away what you can and make what's left easier to secure and maintain.
+                            Services ranged from penetration tests and physical assessments done with an
+                            adversarial mindset to help building security into development processes.
+                        </p>
+                        <p>
+                            It also ran trainings and events, including The Petting Zoo with DC702, and published
+                            plain language articles: <em>Log4Shell: The Basics</em>, <em>Security Through
+                            Abstraction</em>, and <em>Protect Yourself</em>, a starter guide to personal security
+                            hygiene.
+                        </p>
+                        <p class="entry__status"><strong>Closed.</strong> The site is offline; its content is
+                            archived in this site's repository.</p>
+                    </div>
+                </li>
+                <li class="entry" id="the-unknown-space">
+                    <div>
+                        <h3>The Unknown Space</h3>
+                        <div class="entry__meta">Puzzle-based learning</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            "The best way to explain it is to do it." The Unknown Space built custom puzzles and
+                            challenges to teach technology, security concepts, and even onboarding material. The
+                            premise was that memorizing for a test isn't learning; applying information to solve a
+                            problem is.
+                        </p>
+                        <p class="entry__status"><strong>Retired.</strong> The domain now points to C2Society,
+                            which carries the idea forward.</p>
+                    </div>
+                </li>
+                <li class="entry" id="art-of-codes">
+                    <div>
+                        <h3>Art of Codes</h3>
+                        <div class="entry__meta">Puzzle site, passion project</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            A collection of puzzles meant as a path to learning. Each challenge showed off a subject
+                            I found interesting or paid tribute to a puzzle that inspired me. Over time it also
+                            became a playground for trying web attacks and new web technologies.
+                        </p>
+                        <p class="entry__status"><strong>Retired.</strong> The domain now points to C2Society.</p>
+                    </div>
+                </li>
+                <li class="entry" id="threshodl">
+                    <div>
+                        <h3><a href="https://gitlab.com/ThreeBx/Threshodl">Threshodl</a></h3>
+                        <div class="entry__meta">Crypto wallet, ThreeBx, 2018</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            Threshodl moved cryptocurrency off-chain using "micro-wallets," so value could change
+                            hands without a blockchain transaction for every transfer. As CTO of ThreeBx I designed
+                            the concept, wrote the first beta of the mobile app and its backend services, and filed
+                            the patent application (US 15/978,008, <em>Systems and methods for facilitating
+                            off-the-blockchain cryptocurrency transactions</em>) in May 2018.
+                        </p>
+                        <p class="entry__status"><strong>Ended</strong> when ThreeBx dissolved; the patent was not
+                            pursued. Source remains on GitLab.</p>
+                    </div>
+                </li>
+                <li class="entry" id="sharktrap">
+                    <div>
+                        <h3><a href="https://sharktrap.com">Shark Trap</a></h3>
+                        <div class="entry__meta">Technical advisor</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            Shark Trap builds "super shufflers" that bring intelligence and optimization to casino
+                            table games. I advised on algorithms for marked card detection, hashing and
+                            randomization, and computer vision.
+                        </p>
+                        <p class="entry__status"><strong>Past</strong> advisory role.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="https://gitlab.com/uploads/-/system/group/avatar/3745149/threshodlIcon_One_black.png?width=64"
-                    style="height:100px; width: auto;" alt="Responsive image">
-                <br /><br />
-                <a href="https://gitlab.com/ThreeBx/Threshodl">Threshodl Crypto-Wallet</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        Threshodl was the embodiment of an off-blockchain transaction concept that allowed cryptocurrencies
-                        to be
-                        transferred off-chain through the use of "micro-wallets". During May 2018, this was
-                        patent-pending under the application number 15/978,008. Due to the dissolving of the company
-                        (ThreeBx), efforts to
-                        secure patent protection were stopped. As CTO of ThreeBx, I developed this unique patent along with
-                        the first
-                        beta version of the mobile application and corresponding backend services.
-                    </p>
-                </div>
-            </div>
+    <footer class="foot">
+        <div class="foot__inner">
+            <span>Christopher Forte, Las Vegas</span>
+            <a href="/puzzle/">Still curious?</a>
         </div>
-
-        <br><br>
-
-        <div class="row">
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="/img/sharkFin.png" style="height:100px; width: auto;" alt="Responsive image">
-                <br /><br />
-                <a href="http://www.sharktrap.com">SharkTrap.com</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        Shark Trap is developing a line of "super shufflers" designed to bring intelligence and optimization
-                        into table games. At SharkTrap, I have worked as a technical advisor to help develop algorithms for
-                        marked card detection, hashing and randomization algorithms, and various computer vision functions.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="https://artof.codes/images/aocIcon.png"
-                    style="height:100px; width: auto;" alt="Responsive image">
-                <br /><br />
-                <a href="https://artof.codes">Art of Codes</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        Art of Codes is a passion project to create puzzles as a path to learning and exposure. Each challenge
-                        demonstrates a different subject area I find interesting or represents another puzzle I
-                        found inspiring. The project also became a playground to try different web-based attacks
-                        and technologies.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <br><br>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center" style="padding: 10px;">
-                <img src="/img/question-mark.png"
-                    style="height:100px; width: auto;" alt="Responsive image">
-                <br /><br />
-                <a href="https://theunknown.space">TheUnknown.Space</a>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <ul class="list-unstyled">
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="mailto:chris@abstracted.tech"><i class="fas fa-envelope-square fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/isaidnocookies"><i class="fab fa-github fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@christopherforte"><i class="fab fa-medium fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/chris__forte"><i class="fab fa-twitter fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/itschrisforte/"><i class="fab fa-linkedin fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
-
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Scrolls to the selected menu item on the page
-        $(function () {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location
-                    .hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function () {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function () {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function () {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
-        // Disable Google Maps scrolling
-        // See http://stackoverflow.com/a/25904582/1607849
-        // Disable scroll zooming and bind back the click event
-        var onMapMouseleaveHandler = function (event) {
-            var that = $(this);
-            that.on('click', onMapClickHandler);
-            that.off('mouseleave', onMapMouseleaveHandler);
-            that.find('iframe').css("pointer-events", "none");
-        }
-        var onMapClickHandler = function (event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-        $('.map').on('click', onMapClickHandler);
-    </script>
-
 </body>
 
 </html>

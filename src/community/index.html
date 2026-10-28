@@ -2,272 +2,128 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <title>Talks &amp; community · abstracted.tech</title>
+    <meta name="description" content="Talks, workshops, and community work by Christopher Forte, including DEF CON, Shmoocon, SAINTCON, and Las Vegas ISSA.">
     <meta name="author" content="isaidnocookies">
-
-    <title>abstracted.tech</title>
-
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/stylish-portfolio.css" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/4c8d18ba1e.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-        rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="icon" href="/img/glyph.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
 </head>
 
 <body>
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick='$("#menu-close").click();'></a>
-            </li>
-            <li>
-                <a href="/" onclick='$("#menu-close").click();'>Home</a>
-            </li>
-            <li>
-                <a href="/projects/" onclick='$("#menu-close").click();'>Projects</a>
-            </li>
-            <li>
-                <a href="/community/" onclick='$("#menu-close").click();'>Community Involvement</a>
-            </li>
-            <li>
-                <a href="#contact" onclick='$("#menu-close").click();'>Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-
-    <div id="header" class="container">
-        <div class="row text-center" style="margin-top:10%; margin-bottom: 10%;">
-            <h1>[ Community Involvement ]</h1>
+    <header class="bar">
+        <div class="bar__inner">
+            <a class="bar__home" href="/">
+                <svg class="glyph" viewBox="0 0 832 832" aria-hidden="true">
+                    <path class="stroke" d="M430 832 V40 L30 430 H832" />
+                    <circle class="stroke" cx="588" cy="590" r="102" />
+                </svg>
+                abstracted.tech
+            </a>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="/#c2society">C2Society</a></li>
+                    <li><a href="/projects/">Projects</a></li>
+                    <li><a href="/community/" aria-current="page">Talks &amp; community</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-
-    <!-- Community -->
-    <div id="community" class="container">
-        <div class="row">
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="/img/dc702_white_chip.png" style="height:100px; width: auto;" alt="Responsive image">
-                <br /><br />
-                <a href="https://defcon.org/">DEF CON</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        Through DC702 and C2Society, I have been able to contribute to DEF CON through contests, workshops, and volunteering.
-                        I have hosted and been the lead instructor for two DEF CON workshops. These workshops were CTF-styled workshops to help
-                        people get more involved in capture the flag events and appreciate the value they bring to cybersecurity professionals.
-                        Additionally, I have volunteered for the Social Engineering Village, Red Team Village, and the Lockpicking Village through TOOOL.
-                        In 2023, I was also heavily involved in hosting the "Cube" contest.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="/img/shmoo.jpg"
-                    style="height:100px; width: auto;" alt="Responsive image">
-                <br /><br />
-                <a href="https://www.shmoocon.org/">Shmoocon</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        In 2023, I presented "The Song Must Go On" on attacking smart Jukeboxes with the Flipper Zero. This talk was focused on
-                        how something seemingly harmless could be leveraged to target individuals armed with curiosity and malicious intent. This
-                        talk went through the process of exploiting the Jukebox, how it could be used to attack people, and insight into how we as an
-                        industry need to consider the implications of various features as hacking tools ("toys") become more accessible..
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-center" style="padding: 30px;">
-                <img src="/img/saintcon.png" style="height:auto; width: 150px;"
-                    alt="Responsive image">
-                    <br /><br />
-                <a href="https://www.saintcon.org/">SAINTCON</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        I presented "Full Stack for Hackers" in 2023--a talk on how hackers can leverage the skill-sets typically associated with
-                        full-stack developers. This talk starts with the various layers that "hackers" typically interact with, what technologies
-                        we may benefit from being familiar with, and how these skill-sets deviate from that of a traditional full-stack developer.
-                        This presentation initially started out as a workshop hosted for the Air Force and evolved into a conference talk.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-6 text-center" style="padding: 10px;">
-                <img src="https://issawebstite.wpenginepowered.com/wp-content/uploads/2019/05/ISSA-Logo.svg"
-                    style="height:auto; width: 150px;" alt="Responsive image">
-                <br /><br />
-                <a href="https://lvissa.org/">Las Vegas ISSA - Speaker</a>
-                <br>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        During the Q4 2023 Chapter Meeting, I presented on the Adversarial Mindset. This talk was a discussion on what
-                        having an adversarial mindset is, how it can be applied to our professional lives, implications of the mindset within
-                        various engagements, and how biases can impact our ability to think adversarially. This presentation attempted to bring
-                        a new perspective on a topic many organizations are trying to address.
-                    </p>
-                </div>
-            </div>
+    <main>
+        <div class="page-title">
+            <h1>Talks &amp; community</h1>
+            <p class="lead">
+                Conference talks, contests, workshops, and volunteer work, mostly through C2Society and DC702.
+            </p>
         </div>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center" style="padding: 10px;">
-                    <br />
-                <h3>Other</h3>
-                <div class="col-md-10 col-md-offset-1">
-                    <hr />
-                    <p>
-                        In the past, I have spoken on various topics in a variety of settings. This includes interviews on blockchain ("theCube" @ HoshoCon 20218),
-                        workshops for organizations such as the Air Force, FBI, DoE, local police, and more, company trainings on security, presentations for
-                        local colleges, and talks at DEF CON villages (e.g., Lockpicking Village).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+        <section class="section" aria-labelledby="talks-title">
+            <h2 id="talks-title">Talks</h2>
+            <ul class="entries">
+                <li class="entry">
+                    <div>
+                        <h3><a href="https://lvissa.org/">The Adversarial Mindset</a></h3>
+                        <div class="entry__meta">Las Vegas ISSA, Q4 2023</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            What an adversarial mindset is, how to apply it in professional life, what it means
+                            across different kinds of engagements, and how our biases get in the way of thinking
+                            like an attacker. A fresh angle on a topic a lot of organizations are trying to teach.
+                        </p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div>
+                        <h3><a href="https://www.saintcon.org/">Full Stack for Hackers</a></h3>
+                        <div class="entry__meta">SAINTCON, 2023</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            How hackers can borrow the skill set of full-stack developers: the layers attackers
+                            touch, the technologies worth knowing, and where a hacker's needs differ from a
+                            traditional developer's. It began as a workshop for the Air Force and grew into a
+                            conference talk.
+                        </p>
+                    </div>
+                </li>
+                <li class="entry">
+                    <div>
+                        <h3><a href="https://www.shmoocon.org/">The Song Must Go On</a></h3>
+                        <div class="entry__meta">Shmoocon, 2023</div>
+                    </div>
+                    <div class="entry__body">
+                        <p>
+                            Attacking smart jukeboxes with a Flipper Zero. The talk walked through exploiting the
+                            jukebox, how it could be turned against people, and why our industry needs to think
+                            about the features we ship now that hacking tools ("toys") are so easy to get.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <ul class="list-unstyled">
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="mailto:chris@abstracted.tech"><i class="fas fa-envelope-square fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/isaidnocookies"><i class="fab fa-github fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@christopherforte"><i class="fab fa-medium fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/chris__forte"><i class="fab fa-twitter fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/itschrisforte/"><i class="fab fa-linkedin fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                    </ul>
-                </div>
+        <section class="section" id="defcon" aria-labelledby="defcon-title">
+            <h2 id="defcon-title">DEF CON</h2>
+            <div class="prose">
+                <p>
+                    Through DC702 and C2Society I've contributed to <a href="https://defcon.org/">DEF CON</a>
+                    through contests, workshops, and volunteering. We've hosted multiple black badge contests,
+                    including the Cube and Crack the Core.
+                </p>
+                <p>
+                    I've also hosted and been lead instructor for two CTF-style DEF CON workshops (The Petting Zoo,
+                    at DEF CON 30 and 31) that help people get into capture the flag events, and volunteered with
+                    the Social Engineering Village, the Red Team Village, and the Lockpicking Village through TOOOL.
+                </p>
             </div>
+        </section>
+
+        <section class="section" aria-labelledby="other-title">
+            <h2 id="other-title">Elsewhere</h2>
+            <div class="prose">
+                <p>
+                    Over the years I've spoken in a lot of settings: an interview on blockchain for theCUBE at
+                    HoshoCon 2018; workshops for the Air Force, FBI, Department of Energy, and local police; company
+                    security trainings; presentations at local colleges; and talks in DEF CON villages such as the
+                    Lockpicking Village.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="foot__inner">
+            <span>Christopher Forte, Las Vegas</span>
+            <a href="/puzzle/">Still curious?</a>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
-
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Scrolls to the selected menu item on the page
-        $(function () {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location
-                    .hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function () {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function () {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function () {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
-        // Disable Google Maps scrolling
-        // See http://stackoverflow.com/a/25904582/1607849
-        // Disable scroll zooming and bind back the click event
-        var onMapMouseleaveHandler = function (event) {
-            var that = $(this);
-            that.on('click', onMapClickHandler);
-            that.off('mouseleave', onMapMouseleaveHandler);
-            that.find('iframe').css("pointer-events", "none");
-        }
-        var onMapClickHandler = function (event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-        $('.map').on('click', onMapClickHandler);
-    </script>
-
 </body>
 
 </html>

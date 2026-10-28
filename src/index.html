@@ -2,180 +2,139 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <title>Christopher Forte · abstracted.tech</title>
+    <meta name="description" content="Christopher Forte: offensive security, CTFs, lockpicking, and the C2Society community in Las Vegas.">
     <meta name="author" content="isaidnocookies">
-
-    <title>abstracted.tech</title>
-
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/stylish-portfolio.css" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/4c8d18ba1e.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-        rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="icon" href="/img/glyph.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
 </head>
 
 <body>
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick='$("#menu-close").click();'></a>
-            </li>
-            <li>
-                <a href="#top" onclick='$("#menu-close").click();'>Home</a>
-            </li>
-            <li>
-                <a href="/projects/" onclick='$("#menu-close").click();'>Projects</a>
-            </li>
-            <li>
-                <a href="/community/" onclick='$("#menu-close").click();'>Community Involvement</a>
-            </li>
-            <li>
-                <a href="#contact" onclick='$("#menu-close").click();'>Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <img src="./img/myLogo.png" alt="Logo" style="width:25%;">
+    <header class="bar">
+        <div class="bar__inner">
+            <a class="bar__home" href="/">
+                <svg class="glyph" viewBox="0 0 832 832" aria-hidden="true">
+                    <path class="stroke" d="M430 832 V40 L30 430 H832" />
+                    <circle class="stroke" cx="588" cy="590" r="102" />
+                </svg>
+                abstracted.tech
+            </a>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="#c2society">C2Society</a></li>
+                    <li><a href="/projects/">Projects</a></li>
+                    <li><a href="/community/">Talks &amp; community</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <ul class="list-unstyled">
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="mailto:chris@abstracted.tech"><i class="fas fa-envelope-square fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/isaidnocookies"><i class="fab fa-github fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@christopherforte"><i class="fab fa-medium fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/chris__forte"><i class="fab fa-twitter fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/itschrisforte/"><i class="fab fa-linkedin fa-fw fa-3x"
-                                    style="color:black;"></i></a>
-                        </li>
-                    </ul>
-                </div>
+    <main>
+        <section class="hero">
+            <svg class="glyph glyph--draw" viewBox="0 0 832 832" aria-hidden="true">
+                <path class="stroke" pathLength="1" d="M430 832 V40 L30 430 H832" />
+                <circle class="stroke stroke--ring" pathLength="1" cx="588" cy="590" r="102" />
+            </svg>
+            <h1 class="rise">Christopher Forte</h1>
+            <p class="rise rise--late">
+                I work in offensive security and build ways for people to learn it: capture the flag events,
+                puzzles, lockpicking, and talks.
+            </p>
+        </section>
+
+        <section class="section" id="c2society" aria-labelledby="c2-title">
+            <h2 id="c2-title">C2Society</h2>
+            <p class="lead">
+                A Las Vegas nonprofit dedicated to spreading security awareness through the local community.
+            </p>
+            <div class="prose">
+                <p>
+                    C2Society started in 2020 as DC702, the city's DEF CON group, and grew into a nonprofit that
+                    brings together people from every corner of security and IT, from seasoned hackers to people
+                    who have never held a pick. The goal is simple: get hands on the thing. Everything we build is
+                    meant to be touched, broken, and taken apart, because that's how people actually learn how
+                    systems fail.
+                </p>
             </div>
+
+            <ul class="tiles">
+                <li>
+                    <h3><a href="https://www.dc702.space/">DC702 meetups</a></h3>
+                    <p>Weekly sessions for lockpicking, Hack The Box, and whatever members bring in. Open to
+                        newcomers, and home to the local TOOOL chapter.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.the-petting-zoo.com/">The Petting Zoo</a></h3>
+                    <p>A workshop-style CTF that introduces people to capture the flag. Run at DEF CON 30 and 31 and
+                        for government, military, and law enforcement groups.</p>
+                </li>
+                <li>
+                    <h3><a href="/community/#defcon">DEF CON</a></h3>
+                    <p>Black badge contests, including the Cube and Crack the Core, plus workshops and volunteer time
+                        across the villages.</p>
+                </li>
+                <li>
+                    <h3><a href="https://github.com/c2society/building-ctf-challenges">Building CTF challenges</a></h3>
+                    <p>Notes and tooling for writing CTF challenges, plus our CTFd setup for per-team containers.</p>
+                </li>
+            </ul>
+
+            <p class="prose c2-links">
+                Find C2Society at <a href="https://c2society.org">c2society.org</a> and
+                <a href="https://github.com/c2society">github.com/c2society</a>.
+            </p>
+        </section>
+
+        <section class="section" aria-labelledby="work-title">
+            <h2 id="work-title">Projects</h2>
+            <p class="lead">
+                A crypto wallet and a patent, casino shuffler algorithms, a security consultancy, and puzzle sites
+                for people who like rabbit holes.
+            </p>
+            <p class="prose">
+                Several of these have wound down. The projects page keeps an overview of each one so the work stays
+                findable.
+            </p>
+            <p class="more"><a href="/projects/">See all projects</a></p>
+        </section>
+
+        <section class="section" aria-labelledby="talks-title">
+            <h2 id="talks-title">Talks &amp; community</h2>
+            <p class="lead">
+                Smart jukeboxes at Shmoocon, Full Stack for Hackers at SAINTCON, and the adversarial mindset at Las
+                Vegas ISSA.
+            </p>
+            <p class="prose">
+                Plus black badge contests and workshops at DEF CON, and trainings for federal, military, and local
+                agencies.
+            </p>
+            <p class="more"><a href="/community/">See talks and community work</a></p>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Get in touch</h2>
+            <ul class="contact">
+                <li><a href="mailto:chris@abstracted.tech">chris@abstracted.tech</a></li>
+                <li><a href="https://github.com/isaidnocookies">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/itschrisforte/">LinkedIn</a></li>
+                <li><a href="https://medium.com/@christopherforte">Medium</a></li>
+                <li><a href="https://twitter.com/chris__forte">X / Twitter</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="foot__inner">
+            <span>Christopher Forte, Las Vegas</span>
+            <a href="/puzzle/">Still curious?</a>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
-
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Scrolls to the selected menu item on the page
-        $(function () {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location
-                    .hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function () {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function () {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function () {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
-        // Disable Google Maps scrolling
-        // See http://stackoverflow.com/a/25904582/1607849
-        // Disable scroll zooming and bind back the click event
-        var onMapMouseleaveHandler = function (event) {
-            var that = $(this);
-            that.on('click', onMapClickHandler);
-            that.off('mouseleave', onMapMouseleaveHandler);
-            that.find('iframe').css("pointer-events", "none");
-        }
-        var onMapClickHandler = function (event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-        $('.map').on('click', onMapClickHandler);
-    </script>
-
 </body>
 
 </html>
